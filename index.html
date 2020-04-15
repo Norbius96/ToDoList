@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList By Norbert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left-menu">
+        <div class="logo-containter">
+
+            To<span>Do</span>List
+            <img src="img/tick.svg" alt="tick-todo">
+        </div>
+        <div class="form">
+            <div class="alert" id="alert">Uzupełnij dane!</div>
+            <input type="text" placeholder="Title" id="title" autocomplete="off" />
+            <textarea name="task" id="textarea-task" placeholder="Task" class="textareatask"></textarea>
+            <input type="date" id="date" min="" />
+            <button onclick = "addTask()">Add</button>
+        </div>
+
+
+        <div class="legend">
+            <p><h3>Legend:</h3></p>
+            <div class="status">
+                <img src="img/in_progress.svg" alt="In Progress">
+                <p> - In Progress</p>
+            </div>
+            <div class="status">
+                <img src="img/done.svg" alt="In Progress">
+                <p> - Done</p>
+            </div>
+            <div class="status">
+                <img src="img/warn.svg" alt="In Progress">
+                <p> - Time is ending</p>
+            </div>
+            <div class="status">
+                <img src="img/error.svg" alt="In Progress">
+                <p> - End time</p>
+            </div>
+        </div>
+        <div id="numbersoftasks"></div>
+    </div>
+<div class="all">
+    <div class="container" id="container">
+
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
